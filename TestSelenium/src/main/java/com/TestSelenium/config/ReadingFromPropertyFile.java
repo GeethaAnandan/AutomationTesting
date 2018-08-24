@@ -1,4 +1,4 @@
-package com.demo.seleniumTest;
+package com.TestSelenium.config;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
