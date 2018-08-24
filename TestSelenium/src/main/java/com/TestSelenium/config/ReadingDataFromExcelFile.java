@@ -32,7 +32,7 @@ public class ReadingDataFromExcelFile {
 			HSSFWorkbook workbook = new HSSFWorkbook(fin);
 			HSSFSheet sheet = workbook.getSheetAt(sheetIndex);
 			int rows = sheet.getLastRowNum()+1;
-			System.out.println("rows count :"+rows);
+			System.out.println("the rows count :"+rows);
 			int columns = sheet.getRow(0).getLastCellNum();
 			System.out.println("column count"+columns);
 		   

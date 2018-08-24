@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-07-31T16:25:13Z" name="Default suite" finished-at="2018-07-31T16:25:33Z" duration-ms="20627">
+  <suite started-at="2018-08-24T08:17:10Z" name="Default suite" finished-at="2018-08-24T08:17:32Z" duration-ms="21422">
     <groups>
     </groups>
-    <test started-at="2018-07-31T16:25:13Z" name="Default test" finished-at="2018-07-31T16:25:33Z" duration-ms="20627">
-      <class name="com.demo.seleniumTest.CheckDriver">
-        <test-method signature="setderf()[pri:0, instance:com.demo.seleniumTest.CheckDriver@75db5df9]" started-at="2018-07-31T21:55:13Z" name="setderf" finished-at="2018-07-31T21:55:33Z" duration-ms="20602" status="PASS">
+    <test started-at="2018-08-24T08:17:10Z" name="Default test" finished-at="2018-08-24T08:17:32Z" duration-ms="21422">
+      <class name="com.TestSelenium.config.CheckDriver">
+        <test-method signature="setderf()[pri:0, instance:com.TestSelenium.config.CheckDriver@1e178745]" started-at="2018-08-24T13:47:10Z" name="setderf" finished-at="2018-08-24T13:47:32Z" duration-ms="21360" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setderf -->
-      </class> <!-- com.demo.seleniumTest.CheckDriver -->
+      </class> <!-- com.TestSelenium.config.CheckDriver -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
