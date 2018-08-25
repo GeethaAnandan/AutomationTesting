@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.TestSelenium.TestCases.LoginPageTest">
+      <class name="com.TestSelenium.TestCases.OpenTicketWebElement">
         <methods>
+          <include name="getPage"/>
           <include name="getDriver"/>
-          <include name="loginTest"/>
         </methods>
-      </class> <!-- com.TestSelenium.TestCases.LoginPageTest -->
+      </class> <!-- com.TestSelenium.TestCases.OpenTicketWebElement -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

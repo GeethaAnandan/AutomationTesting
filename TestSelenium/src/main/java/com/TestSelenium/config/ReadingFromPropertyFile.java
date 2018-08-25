@@ -6,6 +6,27 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class ReadingFromPropertyFile {
+	static FileReader read=null;
+	public static String getProperty(String key) 
+	{
+		String userdir= System.getProperty("user.dir")+"\\src\\main\\resources\\"+"Environment.properties";
+		
+		try {
+			read = new FileReader(userdir);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		Properties prop = new Properties();
+		try {
+			prop.load(read);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		 return prop.getProperty(key);
+	}
 
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub

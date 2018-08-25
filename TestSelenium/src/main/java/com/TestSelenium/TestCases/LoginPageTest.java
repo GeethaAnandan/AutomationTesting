@@ -6,16 +6,18 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.TestSelenium.config.CheckDriver;
+import com.TestSelenium.config.ReadingFromPropertyFile;
 import com.TestSelenium.pages.LoginPage;
 
 public class LoginPageTest {
 	
 	WebDriver driver;
 	LoginPage login;
+	ReadingFromPropertyFile property;
 	@BeforeTest
 	public void getDriver()
 	{
-		driver =CheckDriver.getDriver("Firefox", "https://phptravels.org/clientarea.php");
+		driver =CheckDriver.getDriver(property.getProperty("ChromeBrowser"), property.getProperty("Url"));
 		login=new LoginPage(driver);
 		//PageFactory.initElements(driver, LoginPage.class);
 		//driver.manage().window().maximize();
@@ -24,8 +26,8 @@ public class LoginPageTest {
 	public void loginTest()
 	{
 		
-		login.enterUserName("geetha");
-		login.enterPassword("geetha");
+		login.enterUserName(property.getProperty("UserName"));
+		login.enterPassword(property.getProperty("Password"));
 		login.clickLogin();
 		driver.close();
 	}
