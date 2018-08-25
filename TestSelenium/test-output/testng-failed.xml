@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.demo.seleniumTest.CheckDriver">
+      <class name="com.TestSelenium.TestCases.LoginPageTest">
         <methods>
-          <include name="setderf"/>
+          <include name="getDriver"/>
+          <include name="loginTest"/>
         </methods>
-      </class> <!-- com.demo.seleniumTest.CheckDriver -->
+      </class> <!-- com.TestSelenium.TestCases.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
